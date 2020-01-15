@@ -56,13 +56,25 @@ class UserExport extends SpecialPage {
         $filePath = tempnam(sys_get_temp_dir(), '');
         $file = fopen($filePath, 'w');
 
-        $db = wfGetDB(DB_MASTER);
-        $users = $db->select('user', ['user_name', 'user_email']);
+        $fields = [
+            'user_name',
+            'user_real_name',
+            'user_email',
+            'user_registration'
+        ];
 
-        fputcsv($file, ['login', 'email']);
+        $dbr = wfGetDB(DB_REPLICA);
+        $users = $dbr->select('user', $fields);
 
-        while ($user = $db->fetchObject($users)) {
-            fputcsv($file, [$user->user_name, $user->user_email]);
+        fputcsv($file, $fields);
+
+        while ($user = $dbr->fetchObject($users)) {
+            fputcsv($file, [
+                $user->user_name,
+                $user->user_real_name,
+                $user->user_email,
+                $user->user_registration
+            ]);
         }
 
         fclose($file);
