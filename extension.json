@@ -1,34 +1,35 @@
 {
-	"name": "UserExport",
-	"version": "2.0.0",
-	"author": [
-		"Rodrigo Sampaio Primo",
-		"Karsten Hoffmeyer",
-		"..."
-	],
-	"url": "https://www.mediawiki.org/wiki/Extension:UserExport",
-	"descriptionmsg": "userexport-desc",
-	"license-name": "GPL-2.0-or-later",
-	"type": "specialpage",
-	"requires": {
-		"MediaWiki": ">= 1.25.0"
-	},
-	"AvailableRights": [
-		"userexport"
-	],
-	"SpecialPages": {
-		"UserExport": "UserExport"
-	},
-	"MessagesDirs": {
-		"UserExport": [
-			"i18n"
-		]
-	},
-	"ExtensionMessagesFiles": {
-		"UserExportAlias": "UserExport.alias.php"
-	},
-	"AutoloadClasses": {
-		"UserExport": "UserExport.body.php"
-	},
-	"manifest_version": 1
+    "name": "UserExport",
+    "version": "2.0.0",
+    "author": [
+        "Rodrigo Sampaio Primo",
+        "Karsten Hoffmeyer",
+        "David Wong",
+        "..."
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:UserExport",
+    "descriptionmsg": "userexport-desc",
+    "license-name": "GPL-2.0-or-later",
+    "type": "specialpage",
+    "requires": {
+        "MediaWiki": ">= 1.25.0"
+    },
+    "AvailableRights": [
+        "userexport"
+    ],
+    "SpecialPages": {
+        "UserExport": "UserExport"
+    },
+    "MessagesDirs": {
+        "UserExport": [
+            "i18n"
+        ]
+    },
+    "ExtensionMessagesFiles": {
+        "UserExportAlias": "UserExport.alias.php"
+    },
+    "AutoloadClasses": {
+        "UserExport": "UserExport.body.php"
+    },
+    "manifest_version": 1
 }
