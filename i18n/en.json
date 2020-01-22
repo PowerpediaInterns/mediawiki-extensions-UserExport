@@ -6,11 +6,11 @@
 			"David Wong"
 		]
 	},
-	"userexport-desc": "Allows to export user data to a CSV file",
+	"userexport-desc": "Allows exporting user data to a CSV file.",
 	"userexport": "Export user data",
 	"userexport-submit": "Export",
 	"userexport-badtoken": "Invalid edit token",
-	"userexport-description": "This page allows exporting the user data (user name, real name, user email, and registration date) of all users registered on this wiki to a CSV file.",
+	"userexport-description": "This page allows exporting the user data (user name, real name, email, and registration date) of all users registered on this wiki to a CSV file.",
 	"right-userexport": "Export user data in bulk",
 	"action-userexport": "export user data from this wiki"
 }
