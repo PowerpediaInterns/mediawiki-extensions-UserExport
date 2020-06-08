@@ -122,7 +122,7 @@ class UserExport extends SpecialPage {
     }
 
     /**
-     * Function to query the database and generate the CVS file.
+     * Function to query the database and generate the CSV file.
      */
     private function exportUsers() {
         $filePath = tempnam(sys_get_temp_dir(), '');
